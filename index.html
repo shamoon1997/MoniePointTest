@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Link to the external CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-body">
+      <div class="container">
+        <header class="header">
+          <nav class="navbar">
+            <div>
+              <img
+                src="./asserts/logo.png"
+                alt="logo"
+                width="100px"
+                height="50px"
+              />
+            </div>
+            <div>
+              <button class="navbar-button .nav-active">Dashboard</button>
+              <button class="navbar-button">Payments</button>
+              <button class="navbar-button">Transaction</button>
+              <button class="navbar-button">Cards</button>
+              <button class="navbar-button">Invoices</button>
+              <button class="navbar-button">Insights</button>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+              "
+            >
+              <img
+                src="/asserts/search.png"
+                width="20px"
+                height="20px"
+                alt="search"
+              />
+              &nbsp; &nbsp;
+              <img
+                src="/asserts/notification.png"
+                width="20px"
+                height="20px"
+                alt="notification"
+              />
+              &nbsp; &nbsp;
+              <div class="vline"></div>
+              &nbsp; &nbsp;
+              <img
+                src="/asserts/setting.png"
+                width="20px"
+                height="20px"
+                alt="setting"
+              />
+              &nbsp; &nbsp;
+              <div class="user-profile">
+                <img
+                  src="/asserts/avatar.png"
+                  alt="User profile"
+                  class="profile-pic"
+                />
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="stats-section">
+          <sub>Total Balance</sub>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <h1 class="balance">
+                $36,254
+                <sub class="date">
+                  <img
+                    src="/asserts/increase.png"
+                    alt="increase chart"
+                    width="10px"
+                    height="10px"
+                  />$328.32 Today, Feb 15</sub
+                >
+              </h1>
+            </div>
+            <div class="action-buttons">
+              <button class="action-button">
+                <img
+                  src="/asserts/eye.png"
+                  alt="view"
+                  width="10px"
+                  height="10px"
+                />
+                View Analytics
+              </button>
+              <div class="vline"></div>
+              <button class="action-button" style="background-color: #6936f5">
+                <img
+                  src="/asserts/send.png"
+                  alt="view"
+                  width="10px"
+                  height="10px"
+                />
+                Send Money
+              </button>
+              <button class="action-button" style="background-color: #161e33">
+                <img
+                  src="/asserts/add.png"
+                  alt="view"
+                  width="10px"
+                  height="10px"
+                />
+                Add Money
+              </button>
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  background-color: #161e33;
+                  border: 1px solid #34495e;
+                  height: 50px;
+                  width: 50px;
+                  border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  align-items: center;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    gap: 2px;
+                    align-items: center;
+                  "
+                >
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-section">
+          <div class="card">
+            <img
+              src="/asserts/account balance.png"
+              alt="account balance"
+              width="100px"
+              height="100px"
+            />
+            <p class="date">
+              Account balance
+              <img
+                src="/asserts/increase.png"
+                alt="increase chart"
+                width="10px"
+                height="10px"
+              />
+              $328.32
+            </p>
+            <h3>$36,254</h3>
+          </div>
+          <div class="card">
+            <img
+              src="/asserts/account balance.png"
+              alt="account balance"
+              width="100px"
+              height="100px"
+            />
+            <p class="date">
+              Account balance
+              <img
+                src="/asserts/increase.png"
+                alt="increase chart"
+                width="10px"
+                height="10px"
+              />
+              $328.32
+            </p>
+            <h3>$36,254</h3>
+          </div>
+          <div class="card">
+            <img
+              src="/asserts/account balance.png"
+              alt="account balance"
+              width="100px"
+              height="100px"
+            />
+            <p class="date">
+              Account balance
+              <img
+                src="/asserts/increase.png"
+                alt="increase chart"
+                width="10px"
+                height="10px"
+              />
+              $328.32
+            </p>
+            <h3>$36,254</h3>
+          </div>
+        </div>
+
+        <div class="bottom-section">
+          <div class="recent-transactions">
+            <div class="transactions-header">
+              <h3>Recent Transactions</h3>
+              <button class="view-all">See All</button>
+            </div>
+            <div class="transaction-list">
+              <div class="transaction-item">
+                <p>Stripe</p>
+                <p>Wed, 16 Feb, 18:11</p>
+                <p>+1,223.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="cash-flow">
+            <h3>Cash Flow</h3>
+            <div class="cash-in-out">
+              <div>
+                <p>Money In</p>
+                <h4>$5,083</h4>
+              </div>
+              <div>
+                <p>Money Out</p>
+                <h4>$485.64</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
